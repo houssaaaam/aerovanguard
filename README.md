@@ -1,18 +1,6 @@
 # 🛸 AeroVanguard
 **Tactical Fleet Dispatch Engine [Node // CMN-05]**
 
----
-
-### 🌐 Live Deployment
-<br />
-<a href="https://houssaaaam.github.io/aerovanguard/">
-  <img src="https://img.shields.io/badge/🚀%20Launch%20Live%20App-Click%20To%20Try%20Matrix-3b82f6?style=for-the-badge&logo=rocket&logoColor=white" alt="Launch Live App" height="45" />
-</a>
-<br />
-<p><sub>Note: Ensure your browser cache is clear for the best 2026 UI/UX rendering performance.</sub></p>
-
----
-
 ### 📖 Executive Overview (Non-Technical)
 **What is AeroVanguard?**
 AeroVanguard is a mission-critical fleet management and telemetry platform. It is designed to act as a "Single Source of Truth" for complex operational environments. 
