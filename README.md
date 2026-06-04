@@ -1,16 +1,48 @@
-# React + Vite
+# 🛸 AeroVanguard
+**Tactical Fleet Dispatch Engine [Node // CMN-05]**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+### 🌐 Live Deployment
+<a href="https://your-website-url.io" target="_blank">
+  <img src="https://img.shields.io/badge/VISIT_AEROVANGUARD-000000?style=for-the-badge&logo=internet&logoColor=white" alt="Visit Live Website" />
+</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+### 📖 Executive Overview (Non-Technical)
+**What is AeroVanguard?**
+AeroVanguard is a mission-critical fleet management and telemetry platform. It is designed to act as a "Single Source of Truth" for complex operational environments. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Why does it matter?**
+* **Operational Visibility:** Real-time geospatial mapping ensures you know exactly where your assets are.
+* **Performance Optimization:** Instant feedback on field technician efficiency and system health.
+* **Dispatch Intelligence:** Automates the intake and routing process, reducing overhead and response times.
 
-## Expanding the ESLint configuration
+*This platform transforms chaotic field data into a high-fidelity, actionable command center.*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🛠️ Technical Specifications (Developers)
+AeroVanguard is built for performance, scalability, and responsiveness.
+
+**Core Stack:**
+* **Frontend Framework:** React.js (Component-based architecture).
+* **Styling:** Tailwind CSS (Utility-first design system for rapid UI iteration).
+* **Geospatial Logic:** Leaflet.js & React-Leaflet (Custom tile rendering and real-time marker updates).
+* **State Management:** React Hooks (Optimized for low-latency telemetry updates).
+
+**Architecture Highlights:**
+* **Custom Map Invalidation:** Implements a robust `ResizeObserver` / `key`-based remounting strategy to resolve Leaflet's layout/container race conditions.
+* **Dark Mode Native:** Tailored UI with high-contrast accessibility for operational rooms.
+* **Modular Roster System:** Asynchronous state handling for field personnel data.
+
+---
+
+### 🚀 Getting Started
+To get the engine running locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/houssaaaam/aerovanguard.git](https://github.com/houssaaaam/aerovanguard.git)
+   cd aerovanguard
