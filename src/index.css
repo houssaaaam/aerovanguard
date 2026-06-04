@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* 🎛️ GLOBAL LAYOUT RESET */
+body {
+  margin: 0;
+  background-color: #020617;
+  overflow: hidden;
+}
+
+/* 🖌️ MODERN SCROLLBAR CUSTOMIZATION */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.45);
+}
+
+/* 🌍 LEAFLET MAP & TILE STABILITY FIXES */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background: #020617 !important;
+  /* CRITICAL: Force display mode to stabilize dimensions */
+  display: flex !important;
+  z-index: 1 !important;
+}
+
+.leaflet-tile-container {
+  will-change: transform !important;
+  backface-visibility: hidden !important;
+}
+
+.leaflet-tile {
+  /* Forces tiles to render as solid blocks */
+  display: block !important;
+  backface-visibility: hidden !important;
+}
+
+.leaflet-pane {
+  z-index: 2 !important;
+}
+
+/* 📍 LEAFLET POPUP THEMING */
+.leaflet-popup-content-wrapper {
+  background: #090d16 !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.7) !important;
+}
+.leaflet-popup-tip {
+  background: #090d16 !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+}
+.leaflet-popup-content {
+  color: #f1f5f9 !important;
+  margin: 12px 14px !important;
+}
+.leaflet-popup-close-button {
+  color: #94a3b8 !important;
+}
+.leaflet-popup-close-button:hover {
+  color: #ffffff !important;
+}
+
+/* 🚀 LOGO ANIMATION */
+.logo-hover-container {
+  cursor: pointer;
+  display: inline-block;
+}
+.logo-hover-container:hover .logo-pulse {
+  transform: rotate(360deg) scale(1.1);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 🧩 UI UTILITIES */
+@keyframes modalZoom {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-modal-zoom {
+  animation: modalZoom 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+select option {
+  background-color: #090d16 !important;
+  color: #cbd5e1 !important;
+}
